@@ -1,33 +1,24 @@
-# 🧪 Alloy Property Predictor & Alloy Type Helper
+Alloy Property Predictor & Alloy Type Helper
 
 **Live App:**  
-👉 [https://alloypredictormaterialsscience-hs3drbwrc7gtmoltl6v3tx.streamlit.app/](https://alloypredictormaterialsscience-hs3drbwrc7gtmoltl6v3tx.streamlit.app/)
+ [https://alloypredictormaterialsscience-hs3drbwrc7gtmoltl6v3tx.streamlit.app/](https://alloypredictormaterialsscience-hs3drbwrc7gtmoltl6v3tx.streamlit.app/)
 
----
-
-## 🌟 Overview
+Overview
 The **Alloy Property Predictor & Alloy Type Helper** is an interactive **Streamlit-based web application** that predicts key mechanical properties of alloys (such as **yield strength** and **hardness**) using their **elemental composition** and **processing parameters**.  
 It also identifies the **alloy family** (e.g., stainless steel, aluminum alloy, brass, bronze) based on composition rules.
 
 This app integrates:
-- 🧠 Machine Learning (Random Forest) for **regression** and **classification**
-- 💾 **Automatic model saving/loading** using `joblib`
-- 📊 **Data visualization** tools for EDA (heatmaps, pairplots, histograms)
-- 🧩 **Alloy Type Helper** for quick material classification
-- 🧮 A built-in **synthetic data generator** for offline testing
-
----
-
-## 🎯 Objectives
+-  Machine Learning (Random Forest) for **regression** and **classification**
+- **Automatic model saving/loading** using `joblib`
+- **Data visualization** tools for EDA (heatmaps, pairplots, histograms)
+   **Alloy Type Helper** for quick material classification
+- A built-in **synthetic data generator** for offline testing
+Objectives
 1. Create a unified interface for alloy property analysis and prediction.  
 2. Enable regression (single and multi-output) and classification tasks.  
 3. Provide a lightweight, open-source app for materials informatics learning.  
 4. Predict multiple mechanical properties simultaneously (e.g., Yield Strength + Hardness).  
-5. Identify probable alloy families from chemical compositions.  
-
----
-
-## ⚙️ Features
+5. Identify probable alloy families from chemical compositions.  Features
 | Module | Description |
 |---------|--------------|
 | **Data Upload / Generation** | Upload real alloy data or use a built-in synthetic dataset. |
@@ -36,10 +27,7 @@ This app integrates:
 | **Prediction Interface** | Enter alloy features manually and get property predictions. |
 | **Model Persistence** | Models saved to disk as `saved_model.pkl` (auto-loads next session). |
 | **Alloy Type Helper** | Rule-based alloy type detection from composition. |
-
----
-
-## 🧠 How It Works
+ How It Works
 1. **Upload CSV** — Provide alloy dataset with columns like `%Cu`, `%Zn`, `%Mg`, `Aging_Temp_C`, etc.  
 2. **Or Use Synthetic Data** — Auto-generates 200 random but realistic samples with simulated mechanical properties.  
 3. **Explore Data** — Generate correlation heatmaps and statistical summaries.  
@@ -47,9 +35,7 @@ This app integrates:
 5. **Predict** — Input new feature values and obtain predicted results.  
 6. **Alloy Type Helper** — Analyze compositions (e.g., `Fe:70, Cr:12, Ni:8`) and get the alloy family suggestion.
 
----
-
-## 🧩 Synthetic Dataset Description
+ Synthetic Dataset Description
 When no real dataset is uploaded, the app generates a synthetic dataset of 200 entries.
 
 | Feature | Description |
@@ -62,7 +48,7 @@ When no real dataset is uploaded, the app generates a synthetic dataset of 200 e
 
 ---
 
-## 🧰 Tech Stack
+Tech Stack
 | Component | Technology |
 |------------|-------------|
 | Programming Language | Python 3.9+ |
@@ -73,11 +59,7 @@ When no real dataset is uploaded, the app generates a synthetic dataset of 200 e
 | Persistence | joblib |
 | Environment | VS Code / Anaconda / Streamlit Cloud |
 
----
-
-## 🚀 Installation and Setup
-
-### 1️⃣ Clone the Repository
+Clone the Repository
 ```bash
 git clone https://github.com/yourusername/alloy-property-predictor.git
 cd alloy-property-predictor
